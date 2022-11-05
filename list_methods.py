@@ -48,34 +48,40 @@ inputFunction = input ("\nWhat do you want to do? [Enter the corresponding numbe
 #3rd step: Create the conditions for each option
     #First Option
 if int(inputFunction) == 1:
+    print ("Chosen Function: Add an Element")
     addNumber = int(input("\nWhat number do you wish to add? "))
     array.append (addNumber)
     print(f"\nYour new list is {array}\n")
     #Second Option
 elif int(inputFunction) == 2:
+    print ("Chosen Function: Insert an Element")
     insertNumber = int(input("\nWhat number do you want to insert? "))
-    insertNumberIndex = int(input (f"\nYou entered number {insertNumber}\n\nEnter the index you wish to insert this number: "))
+    insertNumberIndex = int(input (f"\nYou have entered number {insertNumber}\n\nEnter the index you wish to insert this number: "))
     array.insert (insertNumberIndex, insertNumber)
     print(f"\nYour new list is {array}\n")
     #Third Option
 elif int(inputFunction) == 3:
+    print ("Chosen Function: Modify an Element")
     modifyIndex = int(input("\nEnter the index you want to modify: "))
     modifyNumber = int(input("\nWhat number do you want to see in this index? "))
     array[modifyIndex] = modifyNumber
     print(f"\nYour new list is {array}\n")
     #Fourth Option
 elif int(inputFunction) == 4:
-    deleteIndex = int(input("\nEnter the index you want to delete "))
+    print ("Chosen Function: Delete an Element")
+    deleteIndex = int(input("\nEnter the index you want to delete: "))
     array.pop(deleteIndex)
     print(f"\nYour new list is {array}\n")
     #Fifth Option
 elif int(inputFunction) == 5:
+    print ("Chosen Function: Arrange the list in Ascending order")
     array.sort()
-    print(f"\nYour new list is {array}\n")
+    print(f"\nYour updated list is {array}\n")
     #Sixth Option
 elif int(inputFunction) == 6:
+    print("Chosen Function: Arrange the list in Descending order")
     array.sort(reverse = True)
-    print(f"\nYour new list is {array}\n")
+    print(f"\nYour updated list is {array}\n")
     #Seventh Option
 elif int(inputFunction) == 7:
     sumList = sum (array)
