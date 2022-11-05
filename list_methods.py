@@ -50,27 +50,33 @@ inputFunction = input ("\nWhat do you want to do? [Enter the corresponding numbe
 if int(inputFunction) == 1:
     addNumber = int(input("\nWhat number do you wish to add? "))
     array.append (addNumber)
+    print(f"\nYour new list is {array}\n")
     #Second Option
 elif int(inputFunction) == 2:
     insertNumber = int(input("\nWhat number do you want to insert? "))
     insertNumberIndex = int(input (f"\nYou entered number {insertNumber}\n\nEnter the index you wish to insert this number: "))
     array.insert (insertNumberIndex, insertNumber)
+    print(f"\nYour new list is {array}\n")
     #Third Option
 elif int(inputFunction) == 3:
     modifyIndex = int(input("\nEnter the index you want to modify: "))
     modifyNumber = int(input("\nWhat number do you want to see in this index? "))
     array[modifyIndex] = modifyNumber
+    print(f"\nYour new list is {array}\n")
     #Fourth Option
 elif int(inputFunction) == 4:
     deleteIndex = int(input("\nEnter the index you want to delete "))
     array.pop(deleteIndex)
+    print(f"\nYour new list is {array}\n")
     #Fifth Option
 elif int(inputFunction) == 5:
     array.sort()
+    print(f"\nYour new list is {array}\n")
     #Sixth Option
 elif int(inputFunction) == 6:
     array.sort(reverse = True)
+    print(f"\nYour new list is {array}\n")
     #Seventh Option
-#4th step: Display the new Array
-print(f"\nYour new list is {array}\n")
-
+elif int(inputFunction) == 7:
+    sumList = sum (array)
+    print(f"\nThe sum of the list: {array} is {sumList}")
