@@ -30,9 +30,14 @@
 #The element has been deleted
 #This is the new array: Array: [1, 4, 3, 4, 5, 6 ,2 ,56, 200]
 
+import time
 #1st step: Create and display an array
+print ("\nTHIS PROGRAM IS ABOUT LISTING METHODS\n")
+name = input ("What is your name? ")
+print (f"\nHello {name}! This is the list for today:\n")
 array = [4, 12, 16, 1, 9, 10, 23, 30, 51, 6]
 print (array)
+time.sleep (2)
 #2nd step: Display the options for the user
 print ("\nMENU:")
 print ("\n1 -> Add an Element")
@@ -48,10 +53,10 @@ def menuInput():
         try:
             inputFunction = int(input ("\nWhat do you want to do? [Enter the corresponding number (1-7) from the MENU.]: "))
             if inputFunction not in range (1, 8):
-                print ("Sorry, please enter 1 to 7 only.")
+                print ("\nSorry, you have entered an invalid input.\nPlease enter 1 to 7 only.")
                 continue
         except ValueError:
-            print("Sorry, you have entered an invalid input\nPlease enter a number only.") 
+            print("\nSorry, you have entered an invalid input.\nPlease enter a number only.") 
             continue     
         else:       
 #3rd step: Create the conditions for each option
