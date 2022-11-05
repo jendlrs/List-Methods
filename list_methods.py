@@ -56,11 +56,18 @@ elif int(inputFunction) == 2:
     insertNumberIndex = int(input (f"\nYou entered number {insertNumber}\n\nEnter the index you wish to insert this number: "))
     array.insert (insertNumberIndex, insertNumber)
     #Third Option
+elif int(inputFunction) == 3:
+    modifyIndex = int(input("\nEnter the index you want to modify: "))
+    modifyNumber = int(input("\nWhat number do you want to see in this index? "))
+    array[modifyIndex] = modifyNumber
     #Fourth Option
+elif int(inputFunction) == 4:
+    deleteIndex = int(input("\nEnter the index you want to delete "))
+    array.pop(deleteIndex)
     #Fifth Option
     #Sixth Option
     #Seventh Option
-    
+
 #4th step: Display the new Array
-print(f"\nYour new list is {array}")
+print(f"\nYour new list is {array}\n")
 
