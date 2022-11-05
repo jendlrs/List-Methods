@@ -34,6 +34,33 @@
 array = [4, 12, 16, 1, 9, 10, 23, 30, 51, 6]
 print (array)
 #2nd step: Display the options for the user
+print ("\nMENU:")
+print ("\n1 -> Add an Element")
+print ("2 -> Insert an Element")
+print ("3 -> Modify an Element")
+print ("4 -> Delete an Element")
+print ("5 -> Arrange in Ascending order")
+print ("6 -> Arrange in Descending order")
+print ("7 -> Get the sum of the list")
+
+inputFunction = input ("\nWhat do you want to do? [Enter the corresponding number (1-7) from the MENU.]: ")
+
 #3rd step: Create the conditions for each option
+    #First Option
+if int(inputFunction) == 1:
+    addNumber = int(input("\nWhat number do you wish to add? "))
+    array.append (addNumber)
+    #Second Option
+elif int(inputFunction) == 2:
+    insertNumber = int(input("\nWhat number do you want to insert? "))
+    insertNumberIndex = int(input (f"\nYou entered number {insertNumber}\n\nEnter the index you wish to insert this number: "))
+    array.insert (insertNumberIndex, insertNumber)
+    #Third Option
+    #Fourth Option
+    #Fifth Option
+    #Sixth Option
+    #Seventh Option
+    
 #4th step: Display the new Array
+print(f"\nYour new list is {array}")
 
