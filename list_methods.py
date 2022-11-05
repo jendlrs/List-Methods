@@ -65,9 +65,12 @@ elif int(inputFunction) == 4:
     deleteIndex = int(input("\nEnter the index you want to delete "))
     array.pop(deleteIndex)
     #Fifth Option
+elif int(inputFunction) == 5:
+    array.sort()
     #Sixth Option
+elif int(inputFunction) == 6:
+    array.sort(reverse = True)
     #Seventh Option
-
 #4th step: Display the new Array
 print(f"\nYour new list is {array}\n")
 
